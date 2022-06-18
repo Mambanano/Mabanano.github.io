@@ -1,14 +1,14 @@
 
-mapboxgl.accessToken = 'pk.eyJ1IjoiamFoZXJyZXJhcGEiLCJhIjoiY2w0ZWg0YXpxMDNmZTNkdWhuNWtxcDg5YiJ9.XF-7-11nua2RYpCP5Imfhg';
+mapboxgl.accessToken = 'pk.eyJ1IjoiamFoZXJyZXJhcGEiLCJhIjoiY2w0ZWg0YXpxMDNmZTNkdWhuNWtxcDg5YiJ9.XF-7-11nua2RYpCP5Imfhg'; //librería de uso externo que llama una api de un mapa al archivo html y se puede modificar con javascript//
 
-const map = new mapboxgl.Map({
+const map = new mapboxgl.Map({ //script para llamar el api del mapa y desplegarlo en el html//
   container: 'map',
   style: 'mapbox://styles/jaherrerapa/cl4eh78it001114qsgydocsq9',
   center: [139.3829886432835, 35.7],
   zoom: 9
 });
 
-const geojson = {
+const geojson = { //script que añade marcadores al mapa con geolocalización//
     type: 'FeatureCollection',
     features: [
       {
